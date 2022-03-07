@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF8"/>
+        <meta name="viewport" content="width=device-width initial-scale=1.0"/>
+        <title>Level Renderer</title>
+
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous"/> 
+        
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="../css/portstyle.css">
+        <link rel="stylesheet" href="../css/template.css">
+
+    </head>
+    <body>
+        
+        <!-- Header -->
+        <header>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="../#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="../#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="../#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="../#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Content -->
+
+        <section class="info">
+            <h1 class="section__title section__title--info">Level Renderer</h1>
+            <p class="section__subtitle section__subtitle--info">3d Vulkan Graphics Engine</p>
+            <div class="section__img">
+                <img src="../img/renderer.PNG" alt="A picture of the Heist game."/>
+            </div>
+        </section>
+
+        <section class="details">
+
+            <p class="section__subtitle section__subtitle--detailsOne">A 3d rendering engine written from scratch in Vulkan. Written in C++ and HLSL, the project was focused on graphics programming and some advanced renderer features, such as collision and instancing.</p>
+
+            <div class="section__vid">
+                <video src="../img/renderervid.mp4" controls></video>
+            </div>
+
+            <p class="section__subtitle section__subtitle--detailsOne">Level data was read from a text file and includes hot-swapping levels opening a windows dialog. Levels were designed in blender and parsed into text files using a python script. These different files can be loaded at run-time to switch levels to different scenes upon request.</p>
+            <p class="section__subtitle section__subtitle--detailsOne">Instancing was possible by writing the objects into a map from the standard library. Collisions were implemented using a bounding volume hierarchy tree, to save on computational cost. Instead of checking collision with everything, only check collisions near the camera. </p>
+
+            <a class="project-link" href="https://github.com/AdamStagg/Level-Renderer">
+                <i class="fab fa-github"></i>
+            </a>
+        </section>
+        <!-- Footer -->
+        <footer>
+            
+            <a href="mailto:contact@adamstagg.com" class="footer__link">contact@adamstagg.com</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.github.com/AdamStagg">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.youtube.com/channel/UCfvtCyBLQ0KvBjkYOwpEkpw">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/adam-stagg-4799b21a8/">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+
+        <script src="../js/index.js"></script>
+    </body>
+</html>
